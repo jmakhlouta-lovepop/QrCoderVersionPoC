@@ -1,8 +1,9 @@
+using Abstractions.QrCode;
 using QRCoder;
 
 namespace Wrapper.QrCoder
 {
-    public class QrCoderGenerator
+    public class QrCoderGenerator : IGenerator
     {
         public string GenerateSvg(string input)
         {

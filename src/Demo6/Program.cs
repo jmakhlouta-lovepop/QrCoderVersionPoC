@@ -1,4 +1,4 @@
-﻿using Wrapper.QrCoder;
+﻿using Wrapper.QrCodeGenerator;
 
-var generator = new QrCoderGenerator();
+var generator = new QrCoderGeneratorGenerator();
 Console.WriteLine(generator.GenerateSvg("www.lovepop.com"));

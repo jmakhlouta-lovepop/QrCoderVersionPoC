@@ -1,5 +1,6 @@
 ﻿using System;
-using Wrapper.QrCoder;
+using Abstractions.QrCode;
+using Wrapper.QrCodeGenerator;
 
 namespace Demo5
 {
@@ -7,7 +8,7 @@ namespace Demo5
     {
         static void Main(string[] args)
         {
-            var generator = new QrCoderGenerator();
+            var generator = new QrCoderGeneratorGenerator() as IGenerator;
             Console.WriteLine(generator.GenerateSvg("www.lovepop.com"));
         }
     }

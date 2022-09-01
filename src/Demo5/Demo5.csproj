@@ -6,7 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Wrapper\Wrapper.csproj" />
+    <ProjectReference Include="..\Wrapper.QrCodeGenerator\Wrapper.QrCodeGenerator.csproj" />
+    <ProjectReference Include="..\Wrapper.QrCoder\Wrapper.QrCoder.csproj" />
   </ItemGroup>
 
 </Project>
